@@ -41,3 +41,13 @@ VRM Live Viewer の「手動カメラ設定（Auto Camera Settings）」用カ�
 MoonaWorksが本リポジトリで独自に作成した文書およびサンプルデータは、[CC0 1.0 Universal](LICENSE)で提供します。クレジット表記は不要です。
 
 これはVRM Live Viewer本体、VRM Live Viewerの名称・ロゴ、または第三者が制作した楽曲、モデル、モーション、振付、ステージ、衣装その他の素材には適用されません。
+
+文書バージョン：1.1
+更新日：2026-09-09
+
+更新履歴
+v1.1
+・360度回転の指定方法を実機確認結果に基づき修正
+・rotationHalf の片道／往復動作を追記
+・rotationTime と fps／フレーム指定の関係を追記
+・farClip（クリップ距離）の確認結果を追記
