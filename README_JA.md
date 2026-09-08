@@ -6,13 +6,13 @@ VRM Live Viewer の「手動カメラ設定（Auto Camera Settings）」用カ�
 
 ## はじめに
 
-初めて利用する場合は、まず `docs/Getting_Started_JA.pdf` を参照してください。
+初めて利用する場合は、まず [生成AIを用いた手動カメラ設定のはじめかた](docs/Getting_Started_JA.md)参照してください。
 
 生成AIに仕様書とサンプルJSONを渡し、BPM、フレーム数、キャラクター番号、希望するカメラワークを自然言語で伝えることで、VRM Live Viewer用のAutoCamera JSONを作成できます。
 
 ## ファイル
 
-- `docs/Getting_Started_JA.pdf` - 手動カメラ設定を生成AIで作成する手順
+- `docs/Getting_Started_JA.md` - 手動カメラ設定を生成AIで作成する手順
 - `docs/AutoCamera_JSON_Spec_JA.pdf` - AutoCamera JSONの設定値、UIとの対応、カメラパーツの組み合わせ規則
 - `samples/full_camera_sample_6660f_160bpm.json` - カメラワーク生成のアウトプット例
 
