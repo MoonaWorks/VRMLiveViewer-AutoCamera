@@ -41,3 +41,13 @@ After reviewing the notes above, follow the guide below to create your AutoCamer
 Documents and sample data independently created by MoonaWorks in this repository are provided under [CC0 1.0 Universal](LICENSE). No attribution is required.
 
 This does not apply to VRM Live Viewer itself, the VRM Live Viewer name or logo, or music, models, motions, choreography, stages, costumes, or other materials created by third parties.
+
+Document Version: 1.1
+Updated: 2026-09-09
+
+Revision History
+v1.1
+- Revised the 360-degree rotation method based on actual testing
+- Added verified one-way/back-and-forth behavior of rotationHalf
+- Added the verified relationship between rotationTime, fps, and frame-based timing
+- Added verified information about farClip (clip distance)
