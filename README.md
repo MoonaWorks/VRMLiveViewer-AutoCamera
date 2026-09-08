@@ -6,8 +6,6 @@ Unofficial documentation and samples for creating and adjusting camera work for 
 
 ## Getting Started
 
-If this is your first time using the project, start with the [Getting Started Guide](docs/Getting_Started_EN.md).
-
 Give the specification and sample JSON to a generative AI, then describe the BPM, frame range, character number, and the camera work you want in natural language. The AI can use these materials to create AutoCamera JSON for VRM Live Viewer.
 
 ## Files
@@ -31,6 +29,12 @@ The sample JSON is not a preset for a specific song. It is an example AutoCamera
 - **Frame**: a position on the timeline
 - **Camera data**: one element of `datas[]` in an AutoCamera JSON file
 - **Camera part**: a reusable camera setting made of one or more camera-data entries
+
+## Getting Started
+
+After reviewing the notes above, follow the guide below to create your AutoCamera JSON.
+
+### ▶ [Getting Started with Manual Camera Settings Using Generative AI](docs/Getting_Started_EN.md)
 
 ## License
 
