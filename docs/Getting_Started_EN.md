@@ -81,11 +81,13 @@ Giving the frame number and describing the problem makes the request clearer.
 | The shake is too strong | Jitter → Position Amount / Rotation Amount |
 | Reduce the horizontal movement by about half | Changing Position → Add X / `positionMax` X |
 
-## 7. About 360-Degree Rotation
+## 7. 360-Degree Rotation
 
-In the behavior we confirmed, specifying 360 degrees as a single rotation setting may cause the motion to reverse after 180 degrees.
+A 360-degree rotation can be specified with a single camera-data entry.
 
-In this guide, a 360-degree rotation is therefore built from two consecutive camera data entries: 180 degrees + 180 degrees.
+For a one-way 360-degree rotation, use `rotationHalf=True` (One Way).
+
+When `rotationHalf=False`, the rotation moves back and forth: after reaching the maximum angle, it reverses and returns toward the starting angle.
 
 ## 8. Troubleshooting
 
@@ -94,9 +96,6 @@ In this guide, a 360-degree rotation is therefore built from two consecutive cam
 
 - **The camera work is not what you intended**  
   Tell the AI the frame number and what is different.
-
-- **A 360-degree rotation turns back partway through**  
-  Check that it is built as two 180-degree parts.
 
 - **You do not understand a setting**  
   Refer to the UI-name / JSON-key mapping table in the specification.
