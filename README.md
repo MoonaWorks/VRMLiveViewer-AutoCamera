@@ -31,3 +31,9 @@ The sample JSON is not a preset for a specific song. It is an example AutoCamera
 - **Frame**: a position on the timeline
 - **Camera data**: one element of `datas[]` in an AutoCamera JSON file
 - **Camera part**: a reusable camera setting made of one or more camera-data entries
+
+## License
+
+Documents and sample data independently created by MoonaWorks in this repository are provided under [CC0 1.0 Universal](LICENSE). No attribution is required.
+
+This does not apply to VRM Live Viewer itself, the VRM Live Viewer name or logo, or music, models, motions, choreography, stages, costumes, or other materials created by third parties.
