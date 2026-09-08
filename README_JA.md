@@ -34,4 +34,6 @@ VRM Live Viewer の「手動カメラ設定（Auto Camera Settings）」用カ�
 
 ## License
 
-MoonaWorksが本リポジトリで独自に作成した文書およびサンプルデータは、CC0 1.0 Universalの対象とする予定です。これはVRM Live Viewer本体、VRM Live Viewerの名称・ロゴ、または第三者が制作した楽曲、モデル、モーション、振付、ステージ、衣装その他の素材には適用されません。
+MoonaWorksが本リポジトリで独自に作成した文書およびサンプルデータは、[CC0 1.0 Universal](LICENSE)で提供します。クレジット表記は不要です。
+
+これはVRM Live Viewer本体、VRM Live Viewerの名称・ロゴ、または第三者が制作した楽曲、モデル、モーション、振付、ステージ、衣装その他の素材には適用されません。
