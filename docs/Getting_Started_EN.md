@@ -11,7 +11,7 @@ This is an unofficial project and is not official documentation from the develop
 - VRM Live Viewer
 - A generative AI service that can read attached files, such as ChatGPT or Gemini
 - [AutoCamera JSON Specification (English)](AutoCamera_JSON_Spec_EN.pdf)
-- [AutoCamera Sample JSON](../samples/full_camera_sample_6660f_160bpm.json)
+- [AutoCamera Sample JSON](../samples/full_camera_sample_6660f_160bpm_v1.1.json)
 
 ## 2. Basic Workflow
 
