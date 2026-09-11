@@ -10,8 +10,8 @@ This is an unofficial project and is not official documentation from the develop
 
 - VRM Live Viewer
 - A generative AI service that can read attached files, such as ChatGPT or Gemini
-- [AutoCamera JSON Specification (English)](AutoCamera_JSON_Spec_EN.pdf)
-- [AutoCamera Sample JSON](../samples/full_camera_sample_6660f_160bpm_v1.1.json)
+- [AutoCamera JSON Generation_Guide (English)](AutoCamera_JSON_Generation_Guide_EN_v1.2.pdf)
+- [AutoCamera Sample JSON](../samples/full_camera_sample_6660f_160bpm_v1.2.json)
 
 ## 2. Basic Workflow
 
@@ -31,8 +31,8 @@ This is an unofficial project and is not official documentation from the develop
 
 At minimum, provide the following two files to the generative AI in the same conversation:
 
-- [AutoCamera JSON Specification (English)](AutoCamera_JSON_Spec_EN.pdf)
-- [AutoCamera Sample JSON](../samples/full_camera_sample_6660f_160bpm.json)
+- [AutoCamera JSON Generation_Guide (English)](AutoCamera_JSON_Generation_Guide_EN_v1.2.pdf)
+- [AutoCamera Sample JSON](../samples/full_camera_sample_6660f_160bpm_v1.2.json)
 
 The sample JSON is an example AutoCamera output, not a preset for a specific song.
 
