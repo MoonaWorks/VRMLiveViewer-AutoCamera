@@ -10,8 +10,8 @@
 
 - VRM Live Viewer
 - ChatGPT、Geminiなど、ファイルを参照できる生成AI
-- [AutoCamera JSON指示書（日本語）](AutoCamera_JSON_Generation_Guide_JA_v1.2.pdf)
-- [AutoCamera サンプルJSON](../samples/full_camera_sample_6660f_160bpm_v1.2.json)
+- AutoCamera JSON指示書（日本語）
+- AutoCamera サンプルJSON
 
 ## 2. 基本の流れ
 
