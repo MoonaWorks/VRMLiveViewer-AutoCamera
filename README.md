@@ -11,8 +11,8 @@ Give the specification and sample JSON to a generative AI, then describe the BPM
 ## Files
 
 - [Getting Started Guide](docs/Getting_Started_EN.md) - Step-by-step workflow for creating Manual Camera Settings with generative AI
-- [AutoCamera JSON Specification (English)](docs/AutoCamera_JSON_Spec_EN_v1.1.pdf)(ver1.1) - AutoCamera JSON settings, UI mappings, and rules for combining camera parts
-- [AutoCamera Sample JSON](samples/full_camera_sample_6660f_160bpm_v1.1.json) - Example output of generated camera work
+- [AutoCamera JSON Specification (English)](docs/AutoCamera_JSON_Spec_EN_v1.2.pdf)(ver1.2) - AutoCamera JSON settings, UI mappings, and rules for combining camera parts
+- [AutoCamera Sample JSON](samples/full_camera_sample_6660f_160bpm_v1.2.json) - Example output of generated camera work
 
 The sample JSON is not a preset for a specific song. It is an example AutoCamera output combining horizontal orbits, rolls, Dutch angles, sideways compositions, zooms, dolly movements, Jitter, and other effects. Its frame placement assumes 6660 frames and 160 BPM as an example.
 
