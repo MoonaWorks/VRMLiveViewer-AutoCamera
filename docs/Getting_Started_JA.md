@@ -10,8 +10,8 @@
 
 - VRM Live Viewer
 - ChatGPT、Geminiなど、ファイルを参照できる生成AI
-- [AutoCamera JSON仕様書（日本語）](AutoCamera_JSON_Spec_JA.pdf)
-- [AutoCamera サンプルJSON](../samples/full_camera_sample_6660f_160bpm_v1.1.json)
+- [AutoCamera JSON指示書（日本語）](AutoCamera_JSON_Generation_Guide_JA_v1.2.pdf)
+- [AutoCamera サンプルJSON](../samples/full_camera_sample_6660f_160bpm_v1.2.json)
 
 ## 2. 基本の流れ
 
@@ -31,8 +31,8 @@
 
 最低限、次の2ファイルを同じ会話で生成AIに渡します。
 
-- [AutoCamera JSON仕様書（日本語）](AutoCamera_JSON_Spec_JA.pdf)
-- [AutoCamera サンプルJSON](../samples/full_camera_sample_6660f_160bpm.json)
+- [AutoCamera JSON指示書（日本語）](AutoCamera_JSON_Generation_Guide_JA_v1.2.pdf)
+- [AutoCamera サンプルJSON](../samples/full_camera_sample_6660f_160bpm_1.2.json)
 
 サンプルJSONは特定の楽曲用プリセットではなく、AutoCamera JSONのアウトプット例です。
 
