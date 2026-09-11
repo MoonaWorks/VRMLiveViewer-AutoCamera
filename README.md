@@ -42,12 +42,19 @@ Documents and sample data independently created by MoonaWorks in this repository
 
 This does not apply to VRM Live Viewer itself, the VRM Live Viewer name or logo, or music, models, motions, choreography, stages, costumes, or other materials created by third parties.
 
-Document Version: 1.1
-Updated: 2026-09-09
-
-Revision History
-v1.1
+**Document Version: 1.1　Updated: 2026-09-09**
+## Revision History v1.1
 - Revised the 360-degree rotation method based on actual testing
 - Added verified one-way/back-and-forth behavior of rotationHalf
 - Added the verified relationship between rotationTime, fps, and frame-based timing
 - Added verified information about farClip (clip distance)
+
+**Document Version: 1.2　Updated: 2026-09-11**
+## Revision History v1.2
+- Added guidance for combining Position / Rotation / Distance / VAngle / Jitter effects
+- Added verified interpolation values (EaseInOutLow / EaseInLow / EaseOutLow) with notes on their use
+- Added guidance for continuous rotations of 360 degrees or more using cumulative angles
+- Added generation rules for camera composition differences at cuts and bar-based camera switching
+- Strengthened rules for strictly preserving JSON structure, including `keys` / `values` correspondence, element counts, and vector values
+- Added a rule not to infer unprovided song sections, scenes, or directing intent as a basis for camera generation
+- Added a v1.2 sample JSON with 27 compound-camera examples and descriptions of each camera
