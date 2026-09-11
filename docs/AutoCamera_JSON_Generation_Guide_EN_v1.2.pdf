@@ -1,0 +1,2848 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 10 0 R 14 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 19261
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 42.85039 785.5433 cm
+q
+.129412 .309804 .45098 rg
+BT 1 0 0 1 0 3 Tm /F2 19 Tf 22 TL 14.0574 0 Td (VRMLiveViewer AutoCamera JSON Generation Guide) Tj T* -14.0574 0 Td ET
+Q
+Q
+q
+1 0 0 1 42.85039 771.5433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL 86.9434 0 Td (Unofficial reference for generating and refining camera work from natural-language instructions) Tj T* -86.9434 0 Td ET
+Q
+Q
+q
+1 0 0 1 42.85039 757.5433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL 206.7674 0 Td (Document Version: 1.2 FIX) Tj T* -206.7674 0 Td ET
+Q
+Q
+q
+1 0 0 1 42.85039 732.9433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11.4 Tm /F1 7.2 Tf 9.3 TL (This guide inherits Version 1.1 and incorporates additional behavior verified in VRM Live Viewer. It is intended for generative AI that creates and refines) Tj T* (AutoCamera JSON.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 714.9433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (1. Basic JSON structure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 700.9433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL ({"dataType":"AutoCamera","mode":"Follow","param":{"keys":[...],"values":[...]},"datas":[{"keys":[...],"values":[...]}],"etc":{"keys":[],"values":[]},"version":"3.14.1"}) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 685.6433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2.1 Tm /F1 7.2 Tf 9.3 TL (Important: within each object, keys[n] corresponds to values[n]. Preserve order and element counts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 667.6433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (2. Frames and common settings) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 560.6433 cm
+q
+.909804 .929412 .945098 rg
+n 0 104 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 94 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI / Function) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 94 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (JSON key) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 94 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed mapping) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 82 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Start Frame) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 82 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (startFrame) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 82 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Start frame; frame-based and affected by fps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Switching Mode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (switchingMode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Frame observed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (FPS Unit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (fps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (30 / 60 verified; affects startFrame, freezeFrame, etc.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Far Clip Plane) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (farClip) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 9.6 Tm /F1 6.4 Tf 8 TL (UI Clip Distance; verified minimum 150. Unit, maximum and real-distance mapping not) Tj T* (established) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Max Chara No) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (maxCharaIndex) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI 1 ) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL ( 0; \(All\) ) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL ( -1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Chara No) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (charaIndex) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI 1 ) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL ( 0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Each Setting / Multi Chara) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (eachSetting / multiChara) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (eachSetting: False=shared, True=individual; multiChara: False=single, True=multiple) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 104 m 481.8898 104 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 104 l S
+n 481.8898 0 m 481.8898 104 l S
+n 0 92 m 481.8898 92 l S
+n 0 80 m 481.8898 80 l S
+n 0 68 m 481.8898 68 l S
+n 0 56 m 481.8898 56 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 102.0472 0 m 102.0472 104 l S
+n 221.1024 0 m 221.1024 104 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 558.6433 cm
+Q
+q
+1 0 0 1 42.85039 540.6433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (3. Basic camera settings) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 441.6433 cm
+q
+.909804 .929412 .945098 rg
+n 0 96 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI / Function) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (JSON key) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed mapping) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Offset X/Y/Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (offset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (X,Y,Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Base camera distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation X/Y/Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (X,Y,Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (VAngle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (viewAngle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (View angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Fix Position) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (fixed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL ("" = no fixed axes; "X,Y,Z" observed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (position) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Camera position) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Speed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 105.0472 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (speed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 224.1024 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Movement speed when following target) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 96 m 481.8898 96 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 96 l S
+n 481.8898 0 m 481.8898 96 l S
+n 0 84 m 481.8898 84 l S
+n 0 72 m 481.8898 72 l S
+n 0 60 m 481.8898 60 l S
+n 0 48 m 481.8898 48 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 102.0472 0 m 102.0472 96 l S
+n 221.1024 0 m 221.1024 96 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 439.6433 cm
+Q
+q
+1 0 0 1 42.85039 421.6433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (4. Animated/change settings) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 194.6433 cm
+q
+.909804 .929412 .945098 rg
+n 0 224 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 214 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI / Function) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 214 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (JSON key) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 214 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed mapping) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 202 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Position) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 202 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (enablePositionChange) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 202 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True/False) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 190 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position Interpolation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 190 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (positionInterp) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 190 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Interpolation string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 178 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (One Way \(Position\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 178 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (positionHalf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 178 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True=one-way; False=back-and-forth) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 166 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Add X/Y/Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 166 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (positionMax) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 166 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (X,Y,Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 154 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Time / Offset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 154 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (positionTime / positionTimingShift) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 154 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Time-setting value / start shift) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 142 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Rotation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 142 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (enableRotationChange) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 142 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True/False) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 130 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation Mode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 130 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationMode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 130 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Add / MinMax. Mode selection exists only for Rotation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 118 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation Interpolation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 118 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationInterp) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 118 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Interpolation string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 106 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (One Way \(Rotation\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 106 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationHalf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 106 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True=one-way; False=back-and-forth) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 94 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Min / Max Angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 94 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationMin / rotationMax) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 94 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (MinMax: start) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (end + target rotation. Add: 0) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (added angle + target rotation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 82 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Time / Offset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 82 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationTime / rotationTimingShift) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 82 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationTime=24 verified as 12 sec at 30/60fps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (enableDistanceChange) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True/False) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Distance Interpolation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (distanceInterp) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 58 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Interpolation string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (One Way / Add Distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 46 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (distanceHalf / distanceMax) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 9.6 Tm /F1 6.4 Tf 8 TL (True=one-way; False=back-and-forth. distanceMax is additive movement from) Tj T* (base distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing VAngle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (enableVAngleChange) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True/False) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (VAngle Interpolation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (vangleInterp) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Interpolation string) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (One Way / Max VAngle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 110.7165 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (vangleHalf / vangleMax) Tj T* ET
+Q
+Q
+q
+1 0 0 1 246.7795 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True=one-way; False=back-and-forth / stored value) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 224 m 481.8898 224 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 224 l S
+n 481.8898 0 m 481.8898 224 l S
+n 0 212 m 481.8898 212 l S
+n 0 200 m 481.8898 200 l S
+n 0 188 m 481.8898 188 l S
+n 0 176 m 481.8898 176 l S
+n 0 164 m 481.8898 164 l S
+n 0 152 m 481.8898 152 l S
+n 0 140 m 481.8898 140 l S
+n 0 128 m 481.8898 128 l S
+n 0 116 m 481.8898 116 l S
+n 0 104 m 481.8898 104 l S
+n 0 92 m 481.8898 92 l S
+n 0 80 m 481.8898 80 l S
+n 0 68 m 481.8898 68 l S
+n 0 56 m 481.8898 56 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 107.7165 0 m 107.7165 224 l S
+n 243.7795 0 m 243.7795 224 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 192.6433 cm
+Q
+q
+1 0 0 1 42.85039 174.6433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (5. Jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 99.64331 cm
+q
+.909804 .929412 .945098 rg
+n 0 72 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI / Function) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (JSON key) Tj T* ET
+Q
+Q
+q
+1 0 0 1 294.9685 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed mapping) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Jitter enabled) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (enableJitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 294.9685 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (True/False) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position Amount / Freq) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (jitterPosAmount / jitterPosFreq) Tj T* ET
+Q
+Q
+q
+1 0 0 1 294.9685 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position shake amount / frequency) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position Axis X/Y/Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (jitterPosAxisRate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 294.9685 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (X,Y,Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation Amount / Freq) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (jitterRotAmount / jitterRotFreq) Tj T* ET
+Q
+Q
+q
+1 0 0 1 294.9685 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation shake amount / frequency) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation Axis X/Y/Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (jitterRotAxisRate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 294.9685 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (X,Y,Z) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 72 m 481.8898 72 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 72 l S
+n 481.8898 0 m 481.8898 72 l S
+n 0 60 m 481.8898 60 l S
+n 0 48 m 481.8898 48 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 127.5591 0 m 127.5591 72 l S
+n 291.9685 0 m 291.9685 72 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 97.64331 cm
+Q
+q
+1 0 0 1 42.85039 79.64331 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (6. Interpolation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 40.64331 cm
+q
+.909804 .929412 .945098 rg
+n 0 36 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Saved JSON) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Motion guide) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Linear) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Linear) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Linear / constant) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Ease-In-Out) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (EaseInOut) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Gradually faster ) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL ( gradually slower) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 36 m 481.8898 36 l S
+n 0 0 m 0 36 l S
+n 481.8898 0 m 481.8898 36 l S
+n 0 0 m 481.8898 0 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 136.063 0 m 136.063 36 l S
+n 272.126 0 m 272.126 36 l S
+Q
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 757.8898 595.2756 18 re
+f*
+0 0 0 rg
+BT
+/F1-0 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 256.9538 765.8898 Tm
+(Document Version\072 1\0562) Tj
+T*
+ET
+1 1 1 rg
+n
+35 721.8898 525.2756 32 re
+f*
+0 0 0 rg
+BT
+/F1-0 7.1 Tf
+8.52 TL
+ET
+BT
+1 0 0 1 40 742.8898 Tm
+(This guide summarizes the correspondence between JSON saved by VRM Live Viewer Auto Camera Settings and the UI\054) Tj
+T*
+ET
+BT
+1 0 0 1 40 733.8898 Tm
+(together with behavior verified through actual testing\056 It is intended for generative AI that creates and refines AutoCamera JSON\056) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Symbol
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Contents 11 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 12 0 R
+/F2 8 0 R
+/F2-0 13 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Length 17106
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 42.85039 735.5433 cm
+q
+.909804 .929412 .945098 rg
+n 0 72 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Saved JSON) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Motion guide) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Ease-In-Out \(low\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (EaseInOutLow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed as milder / more Linear-like) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Ease-In) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (EaseIn) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Gradually faster) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Ease-In \(low\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (EaseInLow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed as milder / more Linear-like) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Ease-Out) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (EaseOut) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Gradually slower) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Ease-Out \(low\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 139.063 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (EaseOutLow) Tj T* ET
+Q
+Q
+q
+1 0 0 1 275.126 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Observed as milder / more Linear-like) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 72 m 481.8898 72 l S
+n 0 60 m 0 72 l S
+n 0 0 m 0 60 l S
+n 481.8898 60 m 481.8898 72 l S
+n 481.8898 0 m 481.8898 60 l S
+n 0 0 m 481.8898 0 l S
+n 0 60 m 481.8898 60 l S
+n 136.063 60 m 136.063 72 l S
+n 272.126 60 m 272.126 72 l S
+n 0 48 m 481.8898 48 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 136.063 0 m 136.063 60 l S
+n 272.126 0 m 272.126 60 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 733.5433 cm
+Q
+q
+1 0 0 1 42.85039 701.1433 cm
+q
+.623529 .721569 .792157 RG
+.5 w
+.956863 .972549 .984314 rg
+n 1 -3 507.5748 32.4 re B*
+Q
+q
+BT 1 0 0 1 4 19.5 Tm -0.032966 Tw 8.8 TL /F2 6.9 Tf 0 0 0 rg (Note:) Tj /F1 6.9 Tf ( The author's exact internal handling/strength of the \(low\) interpolation variants remains unverified. However, EaseInOutLow, EaseInLow, and EaseOutLow are) Tj T* 0 Tw (valid values observed in saved JSON. A JSON-generating AI does not need to account for the internal interpolation strength and may use them like the other) Tj T* (interpolation choices.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 683.1433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (7. Combining camera effects) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 658.5433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11.4 Tm /F1 7.2 Tf 9.3 TL (Position / Rotation / Distance / VAngle / Jitter may be combined within one camera-data entry. Do not assume \2231 camera = 1 effect.\224 When moving a multi-entry) Tj T* (part, preserve its internal startFrame offsets.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 644.5433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (new startFrame = requested recipe start + \(original startFrame - first startFrame of the part\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 626.5433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (8. Continuous rotations of 360\260 or more) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 592.6433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 20.7 Tm /F1 7.2 Tf 9.3 TL (A 360\260 rotation can be specified in one data entry. Use rotationHalf=True for one-way motion. Chaining multiple 0) Tj /F3 7.2 Tf 9.3 TL (\256) Tj /F1 7.2 Tf 9.3 TL (360 entries produced a slight reverse) Tj T* (movement at boundaries, so prefer a cumulative angle in one entry for continuous rotation. 0) Tj /F3 7.2 Tf 9.3 TL (\256) Tj /F1 7.2 Tf 9.3 TL (720 \(2 turns\) and 0) Tj /F3 7.2 Tf 9.3 TL (\256) Tj /F1 7.2 Tf 9.3 TL (3600 \(10 turns\) were verified. Do not) Tj T* (generalize beyond 3600 as unlimited.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 578.6433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (enableRotationChange=True / rotationMode=MinMax / rotationHalf=True / rotationMin=0,0,0 / rotationMax=0,360,0 / rotationTime=24 / rotationTimingShift=0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 554.0433 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 11.4 Tm /F1 7.2 Tf 9.3 TL (rotationTime=24 was verified as 12 seconds at both 30fps and 60fps. It is not the same frame-based time system as startFrame / freezeFrame. Do not convert) Tj T* (12 seconds to rotationTime=360. A camera starting at S for N frames occupies S through S+N-1; the next camera starts at S+N.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 536.0433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (9. Natural-language camera terms) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 449.0433 cm
+q
+.909804 .929412 .945098 rg
+n 0 84 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Term) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Meaning in this guide) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Horizontal 360\260 orbit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Character-centered horizontal full orbit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Roll) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotate the screen around the viewing axis) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Dutch angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Static tilted composition) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (90\260 roll / sideways composition) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Character appears to lie sideways) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Dolly / truck) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Camera position movement using Changing Position) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 187.252 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Handheld-like or intense shake) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 84 m 481.8898 84 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 84 l S
+n 481.8898 0 m 481.8898 84 l S
+n 0 72 m 481.8898 72 l S
+n 0 60 m 481.8898 60 l S
+n 0 48 m 481.8898 48 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 184.252 0 m 184.252 84 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 447.0433 cm
+Q
+q
+1 0 0 1 42.85039 429.0433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (10. Refinement guidance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 354.0433 cm
+q
+.909804 .929412 .945098 rg
+n 0 72 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Request) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (UI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 314.811 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (JSON) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Tilt too strong) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 314.811 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (angle Z) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Zoom too strong) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Distance / Add Distance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 314.811 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (distance / distanceMax) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Rotation speed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Rotation - Changing Time) Tj T* ET
+Q
+Q
+q
+1 0 0 1 314.811 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (rotationTime) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Shake too strong) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Jitter Amount) Tj T* ET
+Q
+Q
+q
+1 0 0 1 314.811 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (jitterPosAmount / jitterRotAmount) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Sideways move too large) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Changing Position - Add X) Tj T* ET
+Q
+Q
+q
+1 0 0 1 314.811 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (positionMax X) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 72 m 481.8898 72 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 72 l S
+n 481.8898 0 m 481.8898 72 l S
+n 0 60 m 481.8898 60 l S
+n 0 48 m 481.8898 48 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 127.5591 0 m 127.5591 72 l S
+n 311.811 0 m 311.811 72 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 352.0433 cm
+Q
+q
+1 0 0 1 42.85039 334.0433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (11. Output rules) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 262.9433 cm
+q
+BT 1 0 0 1 0 57.9 Tm 9.3 TL /F1 7.2 Tf 0 0 0 rg (\177 Preserve keys[n] and values[n] correspondence, order, and element counts.) Tj  T* (\177 ) Tj /F2 7.2 Tf (Strictly follow the sample JSON structure. In every object, keys[n] and values[n] must correspond one-to-one. Keep the keys and values arrays in) Tj T* (the same order and with the same element count. Vector values such as X,Y,Z must remain a single string, as in the sample, and must not be split) Tj T* (across multiple values. Before output, verify that keys and values have equal element counts in every datas entry.) Tj /F1 7.2 Tf  T* (\177 Output the final VRM Live Viewer file as one-line minified JSON.) Tj  T* (\177 Pretty-printed JSON may be used for explanation, but also provide the minified final file.) Tj  T* (\177 Do not change stored strings such as True/False into different types.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 244.9433 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (12. Rules for generative AI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 136.6433 cm
+q
+BT 1 0 0 1 0 95.1 Tm 9.3 TL /F1 7.2 Tf 0 0 0 rg (\177 Prefer structures and values from a close example in the supplied sample JSON.) Tj  T* (\177 Combine Position / Rotation / Distance / VAngle / Jitter in one camera where appropriate.) Tj  T* (\177 Do not use a fixed camera-count rule. Choose density from song length, BPM, intensity and camera duration, and avoid long nearly-static stretches.) Tj  T* (\177 ) Tj /F2 7.2 Tf (If adjacent cameras would have almost the same composition, do not switch using only tiny differences in Position, Rotation, Distance, or VAngle.) Tj T* (Either create a clear compositional difference or retain the previous composition so the cut does not appear as an unintended small jump.) Tj /F1 7.2 Tf  T* (\177 Prefer cumulative angles for continuous rotations of 360\260 or more.) Tj  T* (\177 Preserve fps, total frames, character conditions and BPM.) Tj  T* (\177 Do not invent unverified meanings, units or keys.) Tj  T* (\177 ) Tj /F2 7.2 Tf (Do not infer or invent song sections, scenes, or directing intent that the user did not provide, and do not use such assumptions as a basis for) Tj T* (camera type, placement, or switching timing. Generate camera work from the user's supplied conditions/instructions, this guide, and the sample) Tj T* (JSON.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 113.0433 cm
+q
+.623529 .721569 .792157 RG
+.5 w
+.956863 .972549 .984314 rg
+n 1 -3 507.5748 23.6 re B*
+Q
+q
+BT 1 0 0 1 4 10.7 Tm 8.8 TL /F2 6.9 Tf 0 0 0 rg (Pending:) Tj /F1 6.9 Tf ( Appropriate Distance, Position, Offset, VAngle, and related ranges depend on the number of characters. Therefore, no universal numeric range for) Tj T* (keeping characters in frame is defined at this time. A recommended range for a single character also remains pending further real-world testing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 95.04331 cm
+q
+.156863 .360784 .509804 rg
+BT 1 0 0 1 0 2.3 Tm /F2 11.7 Tf 14 TL (13. Example JSON) Tj T* ET
+Q
+Q
+q
+1 0 0 1 42.85039 61.14331 cm
+q
+BT 1 0 0 1 0 20.7 Tm 9.3 TL /F2 7.2 Tf 0 0 0 rg (samples/full_camera_sample_6660f_160bpm_v1.2.json) Tj /F1 7.2 Tf ( is an example output containing multiple camera effects and compound effects. It is not a preset for) Tj T* (a particular song. Conditions: 160 BPM, 30 fps, start frame 0, total length 6660 frames. It is intended to help generative AI learn the variables and how effects) Tj T* (can be combined.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+23 22 549.2756 244 re
+f*
+0.156863 0.360784 0.509804 rg
+BT
+/F2-0 11.5 Tf
+13.8 TL
+ET
+BT
+1 0 0 1 28 229 Tm
+(12\056 Rules for generative AI) Tj
+T*
+ET
+0 0 0 rg
+BT
+/F1-0 5.9 Tf
+7.08 TL
+ET
+BT
+1 0 0 1 31 214 Tm
+<7f20507265666572207374727563747572657320616e642076616c7565732066726f6d206120636c6f7365206578616d706c6520696e2074686520737570706c6965642073616d706c65204a534f4e2e> Tj
+T*
+ET
+BT
+1 0 0 1 31 205.5 Tm
+<7f20436f6d62696e6520506f736974696f6e202f20526f746174696f6e202f2044697374616e6365202f2056416e676c65202f204a697474657220696e206f6e652063616d65726120776865726520617070726f7072696174652e> Tj
+T*
+ET
+BT
+1 0 0 1 31 197 Tm
+<7f20446f206e6f742075736520612066697865642063616d6572612d636f756e742072756c652e2043686f6f73652064656e736974792066726f6d20736f6e67206c656e6774682c2042504d2c20696e74656e7369747920616e642063616d657261206475726174696f6e2c20616e642061766f6964206c6f6e67206e6561726c792d737461746963207374726574636865732e> Tj
+T*
+ET
+BT
+1 0 0 1 31 188.5 Tm
+<7f20417320612067656e6572616c2072756c652c20706c6163652063616d657261207377697463686573206f6e206d75736963616c2062617220626f756e6461726965732e20446f206e6f7420726573747269637420737769746368696e67207374726963746c7920746f2062617220626f756e646172696573207768656e20616e6f74686572206d75736963616c6c79206e61747572616c20706f696e74206578697374732c> Tj
+T*
+ET
+BT
+1 0 0 1 31 180 Tm
+(  such as immediately after a rest\056) Tj
+T*
+ET
+BT
+1 0 0 1 31 171.5 Tm
+<7f2049662061646a6163656e742063616d6572617320776f756c64206861766520616c6d6f7374207468652073616d6520636f6d706f736974696f6e2c20646f206e6f7420737769746368207573696e67206f6e6c792074696e7920646966666572656e63657320696e20506f736974696f6e2c20526f746174696f6e2c2044697374616e63652c206f722056416e676c652e> Tj
+T*
+ET
+BT
+1 0 0 1 31 163 Tm
+(  Either create a clear compositional difference or retain the previous composition so the cut does not appear as an unintended small jump\056) Tj
+T*
+ET
+BT
+1 0 0 1 31 154.5 Tm
+<7f205072656665722063756d756c617469766520616e676c657320666f7220636f6e74696e756f757320726f746174696f6e73206f6620333630b0206f72206d6f72652e> Tj
+T*
+ET
+BT
+1 0 0 1 31 146 Tm
+<7f205072657365727665206670732c20746f74616c206672616d65732c2063686172616374657220636f6e646974696f6e7320616e642042504d2e> Tj
+T*
+ET
+BT
+1 0 0 1 31 137.5 Tm
+<7f20446f206e6f7420696e76656e7420756e7665726966696564206d65616e696e67732c20756e697473206f72206b6579732e> Tj
+T*
+ET
+BT
+1 0 0 1 31 129 Tm
+<7f20446f206e6f7420696e666572206f7220696e76656e7420736f6e672073656374696f6e732c207363656e65732c206f7220646972656374696e6720696e74656e74207468617420746865207573657220646964206e6f742070726f766964652c20616e6420646f206e6f7420757365207375636820617373756d7074696f6e73206173206120626173697320666f722063616d65726120747970652c20706c6163656d656e742c> Tj
+T*
+ET
+BT
+1 0 0 1 31 120.5 Tm
+(  or switching timing\056 Generate camera work from the user\047s supplied conditions\057instructions\054 this guide\054 and the sample JSON\056) Tj
+T*
+ET
+0.956863 0.972549 0.984314 rg
+n
+28 90 539.2756 24 re
+B*
+0 0 0 rg
+BT
+/F1-0 6 Tf
+7.2 TL
+ET
+BT
+1 0 0 1 33 105 Tm
+(Pending\072 Appropriate Distance\054 Position\054 Offset\054 VAngle\054 and related ranges depend on the number of characters\056) Tj
+T*
+ET
+BT
+1 0 0 1 33 97 Tm
+(No universal numeric range for keeping characters in frame is defined at this time\073 a single\055character range also remains pending testing\056) Tj
+T*
+ET
+0.156863 0.360784 0.509804 rg
+BT
+/F2-0 11.5 Tf
+13.8 TL
+ET
+BT
+1 0 0 1 28 80 Tm
+(13\056 Example JSON) Tj
+T*
+ET
+0 0 0 rg
+BT
+/F1-0 6.1 Tf
+7.32 TL
+ET
+BT
+1 0 0 1 31 67 Tm
+(samples\057full\137camera\137sample\1376660f\137160bpm\137v1\0562\056json is an example output containing multiple camera effects and compound effects\056) Tj
+T*
+ET
+BT
+1 0 0 1 31 59 Tm
+(It is not a preset for a particular song\056 Conditions\072 160 BPM\054 30 fps\054 start frame 0\054 total length 6660 frames\056) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+12 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+13 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+14 0 obj
+<<
+/Contents 15 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 16 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+15 0 obj
+<<
+/Length 11329
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 42.85039 471.5433 cm
+q
+.909804 .929412 .945098 rg
+n 0 336 481.8898 -12 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 326 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Camera) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 326 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Start Frame) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 326 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Effect) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 314 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (01) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 314 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 314 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Horizontal 360\260 rotation + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 302 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (02) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 302 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (360) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 302 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + distance change + 20\260 Dutch angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 290 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (03) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 290 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (600) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 290 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Roll 0\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (90\260 + view-angle change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 278 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (04) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 278 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (840) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 278 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + distance change + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 266 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (05) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 266 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (1080) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 266 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Horizontal rotation ) Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (90\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (90\260 + 45\260 Dutch angle + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 254 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (06) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 254 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (1320) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 254 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Vertical position move + view-angle change + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 242 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (07) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 242 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (1560) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 242 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Wide horizontal rotation ) Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (120\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (120\260 + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 230 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (08) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 230 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (1800) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 230 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Continuous 720\260 horizontal rotation \(2 turns\) + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 218 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (09) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 218 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (2160) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 218 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + distance change + view-angle change + ) Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (30\260 Dutch angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 206 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 206 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (2400) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 206 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Distance change + view-angle change \() Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (83.53706\260\) + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (11) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (2640) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 194 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + roll 0\260) Tj /F3 6.4 Tf 8 TL (\256-) Tj /F1 6.4 Tf 8 TL (90\260 + ) Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (45\260 Dutch angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 182 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (12) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 182 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (2880) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 182 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Wide horizontal rotation ) Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (120\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (120\260 + distance change + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 170 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (13) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 170 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (3120) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 170 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (60\260 pitch + vertical position move + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 158 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (14) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 158 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (3360) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 158 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Roll 0\260) Tj /F3 6.4 Tf 8 TL (\256-) Tj /F1 6.4 Tf 8 TL (90\260 + view-angle change + 30\260 Dutch angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 146 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (15) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 146 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (3600) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 146 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Horizontal 360\260 rotation + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 134 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (16) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 134 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (3960) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 134 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + roll 0\260) Tj /F3 6.4 Tf 8 TL (\256-) Tj /F1 6.4 Tf 8 TL (90\260 + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 122 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (17) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 122 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (4200) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 122 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Large distance change + view-angle change + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (18) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (4440) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 110 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Roll 0\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (180\260 + 45\260 Dutch angle + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 98 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (19) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 98 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (4680) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 98 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Roll 0\260) Tj /F3 6.4 Tf 8 TL (\256-) Tj /F1 6.4 Tf 8 TL (90\260 + distance change + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (20) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (4920) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 86 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + horizontal rotation + view-angle change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (21) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (5160) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 74 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + distance change + 45\260 Dutch angle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (22) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (5400) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 62 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Horizontal 360\260 rotation + position move) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (23) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (5760) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 50 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Distance change + view-angle change + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (24) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (6000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 38 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Roll 0\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (180\260 + position move + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (25) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (6240) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 26 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Position move + view-angle change + 45\260 Dutch angle + jitter) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (26) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (6480) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 14 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Horizontal rotation ) Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (90\260) Tj /F3 6.4 Tf 8 TL (\256) Tj /F1 6.4 Tf 8 TL (90\260 + distance change) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (27) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.02362 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (6600) Tj T* ET
+Q
+Q
+q
+1 0 0 1 130.5591 2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.6 Tm /F1 6.4 Tf 8 TL (Final static composition \() Tj /F3 6.4 Tf 8 TL (-) Tj /F1 6.4 Tf 8 TL (20\260 Dutch angle\)) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 .019608 .333333 RG
+.4 w
+n 0 336 m 481.8898 336 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 336 l S
+n 481.8898 0 m 481.8898 336 l S
+n 0 324 m 481.8898 324 l S
+n 0 312 m 481.8898 312 l S
+n 0 300 m 481.8898 300 l S
+n 0 288 m 481.8898 288 l S
+n 0 276 m 481.8898 276 l S
+n 0 264 m 481.8898 264 l S
+n 0 252 m 481.8898 252 l S
+n 0 240 m 481.8898 240 l S
+n 0 228 m 481.8898 228 l S
+n 0 216 m 481.8898 216 l S
+n 0 204 m 481.8898 204 l S
+n 0 192 m 481.8898 192 l S
+n 0 180 m 481.8898 180 l S
+n 0 168 m 481.8898 168 l S
+n 0 156 m 481.8898 156 l S
+n 0 144 m 481.8898 144 l S
+n 0 132 m 481.8898 132 l S
+n 0 120 m 481.8898 120 l S
+n 0 108 m 481.8898 108 l S
+n 0 96 m 481.8898 96 l S
+n 0 84 m 481.8898 84 l S
+n 0 72 m 481.8898 72 l S
+n 0 60 m 481.8898 60 l S
+n 0 48 m 481.8898 48 l S
+n 0 36 m 481.8898 36 l S
+n 0 24 m 481.8898 24 l S
+n 0 12 m 481.8898 12 l S
+n 51.02362 0 m 51.02362 336 l S
+n 127.5591 0 m 127.5591 336 l S
+Q
+Q
+Q
+q
+1 0 0 1 42.85039 469.5433 cm
+Q
+q
+1 0 0 1 42.85039 435.6433 cm
+q
+BT 1 0 0 1 0 20.7 Tm 9.3 TL /F2 7.2 Tf 0 0 0 rg (Unofficial status) Tj /F1 7.2 Tf  T* (This generation guide is unofficial documentation created by MoonaWorks. It is not an official specification from the developer of VRM Live Viewer. Please do) Tj T* (not send questions about this project to the developer of VRM Live Viewer.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+Q
+
+
+endstream
+endobj
+16 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000127 00000 n 
+0000000176 00000 n 
+0000000429 00000 n 
+0000019743 00000 n 
+0000019850 00000 n 
+0000019957 00000 n 
+0000020069 00000 n 
+0000020146 00000 n 
+0000020415 00000 n 
+0000037575 00000 n 
+0000037683 00000 n 
+0000037796 00000 n 
+0000038052 00000 n 
+0000049435 00000 n 
+trailer
+<<
+/Size 17
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+49543
+%%EOF
+3 1 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+ /AF [18 0 R] /Names << /EmbeddedFiles << /Names [(Content Credentials) 18 0 R] >> >> >>
+endobj
+17 0 obj
+<< /Length 24280 /F << /Subtype (application/c2pa) /Length 24280 >> >>
+stream
+  ^ÿjumb   jumdc2pa  Ä  ™ 8õqc2pa   ^≤jumb   Gjumdc2ma  Ä  ™ 8õqurn:c2pa:2b228312-e1d9-4922-ad9b-6ed465c023a3   ¢jumb   )jumdc2as  Ä  ™ 8õqc2pa.assertions   	πjumb   #jumd@À2ªäHùß*÷ÙCic2pa.icon    bfdb image/svg+xml   	wbidb<svg width="716" height="716" viewBox="0 0 716 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M508.749 317.399C516.777 287.314 508.991 253.884 485.389 230.282C461.788 206.681 428.36 198.895 398.273 206.923C376.231 184.928 343.39 174.956 311.148 183.596C278.906 192.234 255.45 217.292 247.36 247.361C217.291 255.451 192.233 278.91 183.595 311.149C174.957 343.391 184.927 376.232 206.924 398.274C198.896 428.359 206.683 461.789 230.284 485.391C253.885 508.992 287.313 516.779 317.401 508.75C339.442 530.745 372.286 540.717 404.525 532.079C436.767 523.441 460.223 498.384 468.313 468.315C498.383 460.224 523.44 436.766 532.078 404.526C540.716 372.285 530.747 339.443 508.749 317.402V317.399ZM470.899 244.776C486.892 260.77 493.488 282.601 490.687 303.412L415.577 260.046C412.411 258.218 408.509 258.218 405.345 260.046L317.401 310.82V277.526C317.401 275.191 318.652 273.005 320.676 271.837L387.644 233.174C414.178 218.353 448.346 222.223 470.901 244.776H470.899ZM357.837 311.144L398.275 334.491V381.185L357.837 404.532L317.398 381.185V334.491L357.837 311.144ZM264.776 269.693C265.207 239.305 285.644 211.649 316.453 203.393C338.3 197.54 360.505 202.744 377.127 215.573L302.014 258.937C298.848 260.764 296.898 264.144 296.898 267.798V369.346L268.065 352.699C266.043 351.531 264.776 349.353 264.776 347.017V269.691V269.693ZM203.391 316.454C209.244 294.608 224.854 277.978 244.276 269.999V356.73C244.276 360.384 246.226 363.763 249.392 365.591L337.337 416.365L308.503 433.013C306.481 434.181 303.961 434.188 301.939 433.02L234.971 394.357C208.868 378.789 195.138 347.261 203.391 316.454ZM244.775 470.9C228.781 454.906 222.186 433.075 224.986 412.264L300.096 455.63C303.263 457.457 307.164 457.457 310.328 455.63L398.273 404.856V438.149C398.273 440.485 397.022 442.671 394.997 443.839L328.029 482.502C301.495 497.322 267.327 493.452 244.772 470.9H244.775ZM450.897 445.982C450.466 476.371 430.029 504.027 399.22 512.283C377.373 518.136 355.168 512.932 338.547 500.102L413.659 456.738C416.826 454.911 418.775 451.532 418.775 447.877V346.329L447.609 362.977C449.631 364.145 450.897 366.323 450.897 368.659V445.985V445.982ZM512.282 399.221C506.429 421.068 490.819 437.697 471.397 445.676V358.946C471.397 355.292 469.448 351.912 466.281 350.085L378.336 299.311L407.17 282.663C409.192 281.495 411.712 281.487 413.734 282.655L480.702 321.318C506.805 336.887 520.536 368.415 512.282 399.221Z" fill="black"/>
+</svg>
+  jumb   )jumdcbor  Ä  ™ 8õqc2pa.actions.v2    „cbor¢gactionsÅ§factionlc2pa.createdqdigitalSourceTypexFhttp://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMediamsoftwareAgent¢dnameggpt-5-6gversionggpt-5-6dwhenx2026-09-11T06:50:11.029986ZrallActionsIncludedÙ   §jumb   (jumdcbor  Ä  ™ 8õqc2pa.hash.data    tcbor•jexclusionsÅ¢estartƒflength^ÿdnamenjumbf manifestcalgfsha256dhashX ©™—YiA´Äx⁄ußÕ¯Ãî—F¶r:ÓzFùumcpad@  âjumb   'jumdc2cl  Ä  ™ 8õqc2pa.claim.v2   Zcbor¶jinstanceIDx,xmp:iid:8af2d546-3b1f-44b3-9761-3bec8baa9023tclaim_generator_info£dnamegChatGPTdicon¢curlx$self#jumbf=c2pa.assertions/c2pa.icondhashX u>=W1í≥®NÎL˚¡åt∑'w÷–6«e6„ÒkspecVersione2.2.0isignaturexMself#jumbf=/c2pa/urn:c2pa:2b228312-e1d9-4922-ad9b-6ed465c023a3/c2pa.signaturercreated_assertionsÉ¢curlx$self#jumbf=c2pa.assertions/c2pa.icondhashX u>=W1í≥®NÎL˚¡åt∑'w÷–6«e6„Ò¢curlx*self#jumbf=c2pa.assertions/c2pa.actions.v2dhashX b5%†ﬁ¸æ“•}TÓ‰HºÈáƒ∫ú»égó#◊—8Ø¥¢curlx)self#jumbf=c2pa.assertions/c2pa.hash.datadhashX +%=¯˘^â‹66¿¸…ﬂ®∞¸u…Nÿ+Äõhdc:titleiimage.pdfcalgfsha256  P8jumb   (jumdc2cs  Ä  ™ 8õqc2pa.signature   Pcbor“ÑYË¢8$!ÇYà0ÇÑ0Çl†•¸ÈpåÚÄ1ÓDds0	*ÜHÜ˜ 0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0260422155105Z270423155104Z0G10	UUS10U
+OpenAI OpCo, LLC10UOpenAI Media Service0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ù∫jLMóÍÅâ∂—æ^XNr°ôﬂiq|Â!#”Å¢5úL£J<Ôn+øÊdÆ◊ÑKi$ZcœÍv
+ê≤e€|<ç·˛¡3wØ'ﬁ; :¥cáòÕMúø¥3D™T07F∏˝öyDsWU£c|›¨X/ÊzÆﬁ•ò√ìNHZ¯‡|§íK’l∫ ¬*»íæu‘îgµW™jöm00,◊Uaåj“S∂ x^ECûNí£ÄÒØ[—≤Î˛ãÔ∫◊7	ï´d-ô…áö¯ø.–ÁcÄñöy†7ì6£5…H…,òcÈDõ5¨πßSlúhs»
+9ÃIÛ £Çg0Çc0Uˇ0 0U#0Ä9=G‹óèØà{MsÕÂÓ§•*0o+c0a09+0Ü-http://crt-c2pa.ssl.com/SSL.com-C2PA-I-R1.cer0$+0Ühttp://ocsp-c2pa.ssl.com0U 00
++ÉË^0)U%"0 ++$
++ÉË^0UÛùM‘Àùr¯F
+vG•hOt0Uˇ¿0	+ÉË^
++ÉË^
+03	+ÉË^&$019bc403-5cd7-7669-afe6-fdb17177d4280	*ÜHÜ˜ Ç Ç8óle°7 Ò˘Ìt∫’¶[5ıglœ+fi@Õı¸“rVﬂ ï(Í¯fﬁBC=¯x†h(â≠µÓ¸ı2“å∏_ÁlÄnÎ[|ó[0Á.B∏∆pö˛˛ 	¨5F’†åIEÄ√∫íU«Zùo“Îÿyõñ:ºDê44}ÙA•3ó/.lQR
+m=I∞À«ÜXÃ‹Óû.È∆9∏3\ ⁄Ó W3T.p(J%)Oí|.“˙›g.zËPx9Q∫É:⁄à~ê#êíıbXöÂ¬®sÜû≈ÿqÈÔ\d{ëÓ7/vòxVdÁoB—}íºÖjomdÖÿˇ"ñÌπÔ≤–\Ñ}h]5[K±≈iHyÊhé†ƒaò:L¯¿$yÂ¶h‡Ô˝÷ê÷.-AduV_ìî∂°úä<∂¿ËmÛ≈CÁv,h§ÚÊÀãàïË{*r$Å=!∆cm/%Ä£ô[™)•˝GÍ·˜kÂ˚[P&m+°Ç]1ı›b®|2‹L«•,r0PÄWìÇ‚ËÆ≥ßØY4ÆrÔ*ùÆx¨‚3ÏSµ…ô“(®*7°N´¸Ã~Xõ'mE·¥*úΩ0W°1. .…‚»T€°íOæ$5ò˛/i‹∏M„ﬁ/Ëlı¡ä‚”˛rw”®+‘WóÆáÿ æì∂âYS0ÇO0Ç7†'+c»ÃM-õÑQrlÙú^2QÆﬁ0	*ÜHÜ˜ 0O1&0$USSL.com C2PA RSA Root CA 202510U
+SSL Corporation10	UUS0251222181730Z301221181730Z0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç À:¥Õ∏úÀ)V∏yß¯kˆ˘ÿèr√¶ò≠*A⁄a.GRΩtQæ]ÏzÇ∂¿˚˙Ë'•ãË˛bÛ`Ò_H ssï‰NnÃNz5ﬁX·◊Ç‹“GCwõﬂHàyü£9§YN^‡NGóÚuB◊v=∂§"‹Ì∆o‘rFå÷Q«µ∑zÚì˘#'’ÄPuäp†hÈÁºÑ(|ú*Í)©¿/˛…vFU∞/cÍ}ûÙ∞D§@ﬁ@6\DäTkWHˇªo§’Íé¬◊|ÿºŒiø† MìE;ô.y“œûü)ªFŸxc0ñ3Qú^ìm˙Â4JXx≥)l]|∏uï<ôw!{ÿ¥JÎ⁄Õ«
+÷…¢ﬁÆó≥∂Qñ⁄íõ√≤ªPƒ˛∂§Lï]-íjObÂ‡*˜i†ú’πì ⁄—ª^O∆Ø˘)L–…ÏÎÛ≤qP{v'hë˘Pà∏w5ÿÕ°·◊”)ÁJ∆áTY$¬g≤m	5€∫Œ∏F•‡ã⁄·ßüjŒ`“ƒ˜¡ﬁsyU‡p¥ÔÍÃ«˛vâNf
+ià-Ì√F¢*‰å‘úWF-Xb’ ®˙~¯¬ŸajÀ5]†ì£≤e®/ÌÔòÁ¸~∫HÙ™°q¸ìØÍßNsài’B¿˘ÑíÖOÀT≥=:¯›)ey Cûñ∏áXñ!Ô—ë{ £Ç&0Ç"0Uˇ0ˇ 0Uˇ0)U%"0 ++$
++ÉË^0U9=G‹óèØà{MsÕÂÓ§•*0U 00
++ÉË^0U#0Ä¸*Ju:Ä˙ôcìsWÏæì∞}√{0x+l0j0$+0Ühttp://ocsp-c2pa.ssl.com0B+0Ü6http://crt-c2pa.ssl.com/SSL.com-C2PA-Root-2025-RSA.cer0	*ÜHÜ˜ Ç Œ6˙>Ôñ6-éØUfˇ{+ kVıÀ≠Ω*Å≠•¶–M£>ì‰ìi’‰å®nÊ7T‚%úÏef(<3=¢ö¢ªÕgdJÁæt!°n√´&ƒ;,⁄Uπ˝GN‡çxõ7Éƒt;≈GaÔmAr§€]CS…ñNÂ‡:ﬂ®›.—ØXó÷ÁÙ_r#<kœΩ9´åì®èßvY>·íı˜Ÿ˚Fb´nn‘àF†≥/*j_•N⁄¯‘¸ÃŸ£<©wE
+¡˘òπ9ÀÃ°q¿*Çq”‰ˆ%‚Q!m÷ﬂ‰SçoJ}é^¿∫’wy!ÅzŒÌ˜õé∂≤äBVùèkA*˛kúãÓ£(œ_ÛÈ–d÷Ó¬âKÎíœıØ¬'M∏ë°7%ôÊ˝Ä‹Ùº«7{æ¥-gX/Á√≥ãqÂDz0∂•≤u>[#~;”T¶:π«Ã3’j5zÅv/˛W⁄i¯>?ÔTèã{F√cû˙Ìƒ/pÑ+ˆVÇÙßÀ$◊l^${:Ω©X;i≥úè“ptˇãn&ª√´E«SñúGµ∆F´^ı¸àãh£5Â|jïeµ´Îπˇ∫∏‡õJG≤ŒÏ/â}ÓØúMƒ…Œı2=è˜&4˛"ãzÌ˘^^g_Q[€$V˚—Y°∑ﬁöf	∂—Ü.˙}~ïyõDf|6Öˆı£gsigTst2°itstTokensÅ°cvalYã0Çá	*ÜHÜ˜†Çx0Çt10	`ÜHe 0Åá*ÜHÜ˜	†xv0t
++Éø0010	`ÜHe  Õ
+0≥8DÄn òŸe>GÓñ
+Àq{M4û‚£§˛Ôld_¢20260911065019.297799Z0Ä	 †m…Ö˛ù†Çf0Çˆ0Ç^†a€F(2äåçJ∑ø˛`„l?q∑0	*ÜHÜ˜ 0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CA0260408174626Z370709174626Z0u10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Leaf0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ Í ≈≠î˝˝'ü«xßa ˇ)a*˚°àÕ_®¢óùâ/ãë»º∞ñê=UÇ¡ñé6j≠âiËê€,D2É®
+ÕwÂ5ËÓ®d[˛∏‡éùÁ °(√5›ß7È"˜	Móö¥Ñs¿.|©PG(†¥i∞á)zY˛5B˘ŸiRJ 7ÚhÃÒ-∑Çñ KF\=§Ü∏KEf8¢NM' ï∫uÃNájüt√ $_ƒ~\Æ˛ÛïÌ ëﬂ<ıÜõ*^÷–›…˙»M√…ÑZI,‰8s`R∏LÓ∆Û∑∂ÿ›j©Œ ∫]÷ƒ\5dÚ#S?bée]p+‘…k	ÅERËWÌZF]⁄]vú%yhÉQ§òÑuëròUˇÿ„Cb±Ìig'Aº≈èÚj+ÉIË·-4ª9ØgΩ¥ï»≤ΩEgÕràî_UK,≠ØÌ•Ù$Øw>ÉädQèëå9ñK∞=Æ˙ô°>å=æ6°.ıcµ £x0v0Uˇ0 0Uˇ¿0U%ˇ0
++0U§'TÇ¢äÄ{=≈ÜÕ?pŸ¬ÉôQx0U#0ÄÚ∞«T=#CÖ‹ s–rÄ=∏®0	*ÜHÜ˜ ÇÅ  ˚$OA¿¿ºò≤2 ç ôH5OƒFV~ß>?∂•#˘*H>‡QùE@x¡ªÉNìP…õ'ñhﬂMŒÚˆ“y´ÔÍ¡⁄?ıòYÊpÕâÙÓGã™ÀÏˇå~·FÿëÊú∏‰4Fˇa“x¯}89„RÌ_fËs¿ r;‰®´éÜ*£7!˘;ﬂ{\TÿL«j*KœCt`Äs£…—wØá©˝µ±Ñjnøà*Œö°ö´¢ûÇH7≈cQó€R|og…iB’œı˚≠^ãê‚‡y<.Éjû•Ë%AèÖÌ‰¡†:ç˛ùRPÔáﬁ·dÕU˘! ﬂ∂)Ôü'n—∫4F´J"OÁbw›E#›a-¬1)èƒπ~y´¥W‘¡Ïœ·\{eI∞ÎM´§«'@N¶¥µèœ|√¥Cßv”^0cÓ®Æ5(td´Z5„[/:>N
+a÷0MCõˇN.∆!π>:, W0ujédK¢–	—◊†g&Amg¯pv∏%&V˘ë&'√KI0Ç~0Çf†ç ∆≈≈⁄∞ºÒNï•Íº0	*ÜHÜ˜ 0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0 260408174626Z21260409174626Z0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CA0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ âº‘π‚»°æaªﬁ<df~ßæúm”©0&<Ù‡k 9ﬂï4Ì©¢eH€7Ü2ÉéÃ
+J†¿Û4l†¿òÕ+ü•ÙÀ|Ÿ&ﬁ~…M¢Ôc[ëÊˆY®“˙N˘Ÿ8+ZÕ`ZòÅò®◊S∆„÷.H¨CW	ÈîÚG˘lEä`∑˜Æ/^¢5NÖ8Öiü4ù–MÿC=Õ4m¸cì¸”pªJËvËjNfI†Ì¸¯æÔö∑®w¨Ô∑8Ãπ‘*3ƒv÷@wÀ˛«]-@”ﬁã<¿÷@AôÀî?,} kR¸û P∑	GE·#U˙±OoTòïÙ}∫¯h·"z‹äëCã∂.C±b†æ $é.Ôø§—MË∏?1œ&=≈ PÍÚŸ$ dÌ’sû.px™ﬁV<˘‘Ä¢Ë≠Øˆ˚®£\Àh´D€0wÚƒ4tkUm∆á˚Ú2<ûqE˜ÏP˚˛÷1&ª–ƒMa‚B€Ø√+n_+Ê‚∞Ôç\DÕ¿s}è¢ÈΩmÇº%eÑ0iÌ £{0y0Uˇ0ˇ 0Uˇ0U%0
++0UÚ∞«T=#CÖ‹ s–rÄ=∏®0U#0ÄX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0	*ÜHÜ˜ Ç íÏ7\ﬁlÎd⁄Æ°	0rÆ‹rı;ºz=÷∆·/ˆÉ3}ËW@NLô™k‘ôŸã€k÷L¯ –Y3”°†8\#àD$˚á·ˆì'º°ÌL_g]ˇ5´1“Ï{‘@C7O¬Ñú∫d»∞¢~ö6¯·–Ç≥PC≤‡UΩÄî»YRNJtﬁ]«EXõ∑˙0™;‹Gº’.,π8c,yZ∑›U≠=BﬂàœÒh˛s ‘Z∑ﬁ$óë¿Ág˛‹¶
+Û•F≥QœçØ_„»∏@∆Ω„˘÷Kq–d]Âd¬K¿^w—=«[ûœ{˝îîÁKQ⁄˚dÙ´5îÒˆæ~+›≤ö=P›P√ñdém´sü(;w–óÌoEO±3._FÎÉ∂©aº◊ÇÆ¯Äo¬„i0Êm|:Dí+ò-Ø‹4¡æ•*HÁá»ﬁ8µ3 „ÑPpÒ≤KﬁçOˆë‹_Ö˙ÒÊ—◊ ßÓ¥üˆ!x)Å„pXwÜ§:KóÉFË⁄¬jv…©À!Eæe±†Ü.ÄºYKMõCm¥◊Ñ‡¸’»aêCéjù√Ò!<Ñ]˛;÷ÿ#9E_q˙2˝†ÄïDµO Â√t˝‚NárÜÙQáΩ‘µ+5lí§;kjù∫˝¿;úv¬’9I⁄„î>Pj◊L‚âaùÔÎœ≈√@npz80ÇÊ0ÇŒ†P;lâå$3,è˜Oé˚}ÇÏ0	*ÜHÜ˜ 0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0 260408174625Z21260409174625Z0x10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Root CA0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ˆíÈ“∫≠û·¨u®Vÿ™±≥jí_ñyıí∑-$¯ø¿Ø`æ¡öÕyö‹lö˛6ö¡ò§?‰,ù∫••Ps≥
+¬˘ÛƒI/xΩ“ÏºÁ?Ùõ—Ú†a¢,â% Q˘%ú“∆/ÙâƒA˛&”m5ÕÏª5`@®ÖQæˆÓêòÒ*ÿùzkjŸ.ŸcÛÂ\)≈Ü"¡ähÕÎ8û©Pñ[#C˚8ˇB|;:°Q/%…H‹1ˇPrÓ|°wÕoÅaÛ?ønË“±¶6‰k2˚˛w®^õ\››1êLéeˇÅÀAŒ(1S CŒHn}÷d≥)‰¥.:∑TZrVWÛ®j}ÔÊa›e»H	Iô2t
+¢Ã›ì S¨#ΩÇÖ ±ÔæÌ°w Ó:F3¢ûÏØÈ1f¥fo≤âì†~ï!ŒA¯^éÈÕπ¿’3]x––'1œP0rs⁄j¬¿ìœ≠‹dáˆ˚Nàvı>Ôˇí,ôw.ˆ‹ò∂ù	:˝Ù	«è_ZÈ~H	+µäÉÚ[<,Øë¢ùA∑Rh—ø∞¿⁄O`ΩÓ)™Ìáçq\(åçà£%cEÿ¸{aèlFT;\…∞ÇØÉ»±#?ü[Ó¢◊Tµ*SÆªÖ€¶˙óûÏÑârÛz@…∂ÖXG[Ò$a9¢Lﬁÿ∆®"Úûø[L,À £f0d0Uˇ0ˇ0Uˇ0UX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0U#0ÄX¬@†<Gv+®Ên®ëñéñ»∑Ÿ‰0	*ÜHÜ˜ Ç X¯ÅëòÚla˛»Ü÷[Ñ¶÷æ∏¶]]IÀ∏°)Õ-ù∏X˘Ñâ=<¯o’j¥*¢UígÅô^µT˚öFÄ„Q S¿¡àWﬁÔÇU~„Ù}Î&¸Éˇ!®¡¨ﬁ€ì´Õ–0v:ìùŒ™g9.Ätﬂm~v/ÈÍPAã8=lÂ‡>Ó/€dT6^æbE∂—!¥Ä<åÎ⁄ú÷J©’Te[k—X~¿IáÎÎK_í;î◊öÜˆ°YŒG8¨√∞td—¿R;°±{(k·ió¯(;'ˇÆ§û˜eÀ†ÙÍπΩîŒD‚ò±
+HhÓU©!•`è˛ ÷}—{Ü úÛ®x–∆⁄@.»Å\b®*¡˚VÁyéØÏÂ€”p˛FÃc®dÒ<ÈØ•dº^øÖ-∞Œ„π”§◊RªpãÜù˚.ø
+ˆ“U+#B+C\Ï°Ça?œqÌ∞˜óÈ‰À¬<¸¨w∑∂‹ ¡LÈâ≤≤/√~ídúµÑﬁÃñ˝â∞KµC}“È≠Ü˝Ÿ-üΩ Ó¿¥GV#|HëNgâ {b¡…^UÒˆ∆Q#WoÔáæ Fyæî±» (ùïäà&UfRÔŸK∫®ZÈ¬,≠ü√\BÛ°ı'dyqå
+Zû˝π˘Eyp·jµ7ñéX˝EøT%åÉ=Ÿ&3#–Xw¶∏1Çh0Çd0Åì0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CAa€F(2äåçJ∑ø˛`„l?q∑0	`ÜHe †Ç%0	*ÜHÜ˜	1*ÜHÜ˜	0/	*ÜHÜ˜	1"  -à:`hM,b™ıdÑÿ≠Æé≥⁄í†‡∞"Çà∂A0Å’*ÜHÜ˜	/1Å≈0Å¬0Åø0Åº ΩOπ≤êLÅ6gànÔA·m˛Ÿ"ùø[íJ–¢ƒ`F"z0Åó0§}0{10	UUS10	UCA10USan Francisco10U
+OpenAI OpCo, LLC10
+UTSA10UOpenAI TSA Issuing CAa€F(2äåçJ∑ø˛`„l?q∑0	*ÜHÜ˜ ÇÄ∂˘π∫≈mìu§@è…ü≈Dä¯‡€—Oµ9}‡≥DEsÔÑ™˙Çs„d»Vœf	OH.hòØ‚k«–E }ˇÉªÒ`ó√πÂÃˇ¯9]·ìÖFq|Ã)∏CÏa§p{ﬁ;ÎΩ'µÀÁ:òπŒ…ö1°ÑPêª@7›ç”˙√Ó˜ëı‰(i9_‘[Ü+≈*KΩs`0>läÿmcz+*ÅJ‡lkp_<ñ˙ÄÇbÌÇıÌÄ)sjè·Ç∞ˆvnp˘d·p6ÚÛI≤≠ˆAkÿ\∫Q≥Â=ï&®å˘∆Ûu.˙TÊ,î˝HéæB⁄+ÅyI8ÿπJckdﬁÁñïjª⁄±ƒ¶ß◊}4
+,’T˘^√X.Å´JKZ¯LÌö5G4øë∆>ﬁÒ=à»À–ˆ∑k.ÒØÀK"‚ª~kµÖ‚Ã€ræíÚ˙÷Ñ‚¡ÜÔFÕ'ÑòSõ/∆“∂Å[≈Ω˘%sí‚ß:Äu¢Ω….6åh≥˘¸¯ C”¯¯a∫ëerVals°hocspValsÅY◊0Ç”
+ †ÇÃ0Ç»	+0Çπ0Çµ0ÅÈ¢cÛ¢^ÕÕ≈Rπ?Û”5fm»~20260910213753Z0Åò0Åï0I0	+ ﬂÇ7S^Sÿ3±‡=$5ÒuÊ·
+9=G‹óèØà{MsÕÂÓ§•*•¸ÈpåÚÄ1ÓDdsÄ 20260910213753Z†20260917213752Z°"0 0	+020160912213753Z°#0!0	+0d>û◊òmˇ∏_≥à1i}!0	*ÜHÜ˜ ÇÅ W°ÅI—‡bÎÎfã≤–«tVÄDZwÌc'-R˝M≠ÅÅ»Ê¡1kõL‚˛(^À≠ú¶ıwZœËÜU¬Sî˝qwCö,Ù&}æ“ŸÕ€_¯7;V5<w8îÓ˚´‰" ZŒ!~ x(SŸ]6œnÚ˝tË–“<DåÑL÷˜€[P\œl@m©≈gËÿ˛Ê( `$<‡Ö-Ùø_!;R÷s†ycÈ‹t4§/DÓ28S°Çï‡/?O∞÷/ÆË}kc"∂ßúÄÍUÓ,oxq˘˙7_ˆ¸Lñe˙Ê®÷w¶5li5Ì≈Ωôñ≤^MZ5§ô·–!ó£◊Ú≠JƒÕå‰rH√€G2ÇZƒ√2eëﬂr2˝ÍoxéT¥3®.Ä“ˇj†$Oªè•‚ûûŸıñÆ_¿nEjÙ˛w8(Õc?ˆ8ìéñ™xX/£ÖŸ¢ÂtÎoÉ®≥Ø;F>6Ñ∏æ‘:Ÿ≤	çE,2ÕÏpZûT–êR o≠æ†Ç10Ç-0Ç)0Ç†/	õËƒH®EM—g+a0	*ÜHÜ˜ 0J1!0USSL.com C2PA ICA R1 202510U
+SSL Corporation10	UUS0260102212505Z270102212504Z0M10	UUS10U
+SSL Corp1+0)U"SSL.com C2PA ICA R1 OCSP Responder0Ç¢0	*ÜHÜ˜ Çè 0ÇäÇÅ ≈Á¯ô…˘Â-œhwÈiëP‹©ë\O¿´—ô)„ñŸ˘Y˜fÄäñû*´¶Ü˘dkV∏NêƒÍ,D[ïp\âKºúÁïA¯V ” &Tn=∆≥ü∂tZ¯€kûPhêù‹Zêò©ãCﬁÇùûœz`ÎãØõè)∏Ü	G≠U[^
+èÍÃäım$8Ëz˚¡¬–Ì+ıÁëpÁzπ‘Üüó4hs‡ü2`Ø∆™tFµ0fÚÎz™ÄDxCü ´bÒ“∑L1R¶$D˝#÷2“y¡⁄¨,fÏËàíCÑ/m,ïìÅ<Òâ¨'ã‘I”kb∆h*(¶»s•lÇÈl‘∞
+ Ûß%lY¬∏≤ürn4‚£x;3 q% ≠•π…[∑CN¢”[Ç¸d^t;{ƒ:ÔS´ñ˚ÌÉqúv<ü¬nmÏYdÔ9´˙åü@ˇπ<±ÃOﬂM%4ØÃ]πBÖk6[ö·0s◊Ú˜?‡ùÃá—πíœÉ‘ƒ\f˚≠Ò £Åá0ÅÑ0Uˇ0 0U#0Ä9=G‹óèØà{MsÕÂÓ§•*0	+0 0U%0
++	0UcÛ¢^ÕÕ≈Rπ?Û”5fm»~0UˇÄ0	*ÜHÜ˜ Ç wÏ∫'8¯Ãıl>(‘≥
+œwıÜh|uÉÂIƒh˙√fΩ“pw¸L&à˜0KTdŒë| Ø∑Zµ‰™ôüá6È`ú∞"éΩÊˇ¡5ÿd_¨—>·@â®ÃâÁ†2fµ.øÒ9M˝lsæˆ 6p„’_yŸ÷r¡2LÙÖ©B∏FÇÄ3≈h,ªÂ¸2ûâ_ü–˛üãk\^tüPÒ)úP ƒV¯¯	•xw≥‰ëäÂ *∂·≤≈±!Ω¢ÖÜ8£¨∏:9 ^÷1∂˛∫:™†∫SNÚÛ*OÿdÖÇyZ‹Oã‘S¬=z¿∂¶ΩÑ*Î4Ïí2˚ µi„_:±ìQ…XRòï–6Øö›djÜ^cY¥ÇNßä¸≠˜C9CqQI€««Bë `EØC[i¸J<1ˆ|;Äù¿[^® %ıÌE¸F˛{πˆM,A$§`Ø£ÛÎ„∏ıqÉ»IΩê?Ëÿëé4X6Üﬂ’Œ∂%≈ìY˜s¡3˚0oåπÈ=“{h>6ˆ˘Ïx*˚±˙Bt1ÓöÿHn±¯û–+…ƒè˚<zœ«‰“ßj√3”÷¡ µË"ìLÆ_4éÔi{€|Ãeı1¥UâUÇN»n…√€Oëª^◊EST}hL˜\⁄)›µv,6zãGåÌc‡£´4Ÿ≈∞Eπ∫úÊ•r›∂∏!ﬁê«gcpadY&u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ˆY /'ˇpøˆ©„¸V∫¿ÍOπh≈ÒP/ùè+Ç6tR]ä≥f‰@∏’◊Å p±t&W1ìÌø4ﬂ{Æ._5í≤ÁliTO>«Vçe£z=u-|#ñN{È,ﬂG+ƒπLz:í~»Lı"`ü°üµ8BSŒtÚ„’º ÆÅ‰è‹)	RﬁiJd√„æ¶‘”q”(gŸjwÌ™8iA‰4pFÁ:¶¬Ka“G™¸¯:†÷LJz¶µ∑i±∆Œ¯™àŒA˜“‹À∫	©Öntíjˆç%‡Ÿ•eß'°jI%)Aí>ˇºÀ˙4	Œ‘‡õ~Ò5™@µ'KL∂Øe
+ *f
+endstream
+endobj
+18 0 obj
+<< /AFRelationship /C2PA_Manifest /Desc (Content Credentials) /F (Content Credentials) /EF << /F 17 0 R >> /Subtype (application/c2pa) /Type /FileSpec /UF (Content Credentials) >>
+endobj
+xref
+3 1
+0000049962 00001 n 
+17 2
+0000050097 00000 n 
+0000074482 00000 n 
+trailer
+<< /Size 19 /Root 3 1 R /Prev 49543 >>
+startxref
+74678
+%%EOF
