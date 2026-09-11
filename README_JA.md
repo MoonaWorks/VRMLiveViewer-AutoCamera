@@ -11,7 +11,7 @@ VRM Live Viewer の「手動カメラ設定（Auto Camera Settings）」用カ�
 ## ファイル
 
 - [生成AIを用いた手動カメラ設定のはじめかた](docs/Getting_Started_JA.md) - 手動カメラ設定を生成AIで作成する手順
-- [AutoCamera JSON仕様書（日本語）](docs/AutoCamera_JSON_Spec_JA_v1.2.pdf)(ver1.2)- AutoCamera JSONの設定値、UIとの対応、カメラパーツの組み合わせ規則
+- [AutoCamera JSON指示書（日本語）](docs/AutoCamera_JSON_Generation_Guide_EN_v1.2.pdf)(ver1.2)- AutoCamera JSONの設定値、UIとの対応、カメラパーツの組み合わせ規則
 - [AutoCamera サンプルJSON](samples/full_camera_sample_6660f_160bpm_v1.2.json) - カメラワーク生成のアウトプット例
 
 サンプルJSONは特定の楽曲用プリセットではありません。水平オービット、ロール、ダッチアングル、横倒し構図、ズーム、ドリー、Jitterなどを組み合わせたAutoCamera JSONの出力例です。フレーム配置の例として全長6660フレーム、160 BPMを想定しています。
