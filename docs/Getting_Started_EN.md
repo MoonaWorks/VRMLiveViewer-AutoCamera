@@ -110,3 +110,8 @@ For individual settings, UI mappings, and rules for combining multiple camera pa
 - When publishing videos made with these materials on YouTube or other services, check the terms of use and rights for the music, models, motions, choreography, stages, costumes, and any other materials you use.
 - When using distributed motions or choreography, check the credit requirements and usage conditions specified by the distributor, creator, performer/dancer, or other relevant rights holder, and include any required acknowledgements or credits.
 - Please do not send questions about this project to the developer of VRM Live Viewer. The developer of VRM Live Viewer does not provide support for this project.
+
+##11.  Demo Videos
+-v1.1 Explanation Video https://www.youtube.com/watch?v=lpkKZuS4X-Y
+-v1.1 Demo with On-screen Explanations https://www.youtube.com/watch?v=D1LzWphiurA
+-v1.2 Demo with On-screen Explanations https://www.youtube.com/watch?v=DcAxOVgHADY
