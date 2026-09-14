@@ -36,6 +36,18 @@ After reviewing the notes above, follow the guide below to create your AutoCamer
 
 ### ▶ [Getting Started with Manual Camera Settings Using Generative AI](docs/Getting_Started_EN.md)
 
+## Demo Videos
+
+* **v1.1 Explanation Video**
+  https://www.youtube.com/watch?v=lpkKZuS4X-Y
+
+* **v1.1 Demo with On-screen Explanations**
+  https://www.youtube.com/watch?v=D1LzWphiurA
+
+* **v1.2 Demo with On-screen Explanations**
+  https://www.youtube.com/watch?v=DcAxOVgHADY
+
+
 ## License
 
 Documents and sample data independently created by MoonaWorks in this repository are provided under [CC0 1.0 Universal](LICENSE). No attribution is required.
