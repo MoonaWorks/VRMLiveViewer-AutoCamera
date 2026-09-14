@@ -38,7 +38,7 @@ After reviewing the notes above, follow the guide below to create your AutoCamer
 
 ## Demo Videos
 
-* **v1.1 Explanation Video**
+* **v1.1 Explanation Video(Japanese)**
   https://www.youtube.com/watch?v=lpkKZuS4X-Y
 
 * **v1.1 Demo with On-screen Explanations**
