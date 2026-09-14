@@ -36,6 +36,18 @@ VRM Live Viewer の「手動カメラ設定（Auto Camera Settings）」用カ�
 - **カメラデータ**：AutoCamera JSONの `datas[]` の1要素
 - **カメラパーツ**：再利用可能なカメラ設定。1個または複数のカメラデータで構成
 
+## デモ動画
+
+* **v1.1 解説動画**
+  https://www.youtube.com/watch?v=lpkKZuS4X-Y
+
+* **v1.1 デモ（字幕解説付き）**
+  https://www.youtube.com/watch?v=D1LzWphiurA
+
+* **v1.2 デモ（字幕解説付き）**
+  https://www.youtube.com/watch?v=DcAxOVgHADY
+
+
 ## License
 
 MoonaWorksが本リポジトリで独自に作成した文書およびサンプルデータは、[CC0 1.0 Universal](LICENSE)で提供します。クレジット表記は不要です。
