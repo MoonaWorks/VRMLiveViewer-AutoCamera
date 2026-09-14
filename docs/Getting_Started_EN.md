@@ -112,6 +112,11 @@ For individual settings, UI mappings, and rules for combining multiple camera pa
 - Please do not send questions about this project to the developer of VRM Live Viewer. The developer of VRM Live Viewer does not provide support for this project.
 
 ##11.  Demo Videos
--v1.1 Explanation Video https://www.youtube.com/watch?v=lpkKZuS4X-Y
--v1.1 Demo with On-screen Explanations https://www.youtube.com/watch?v=D1LzWphiurA
--v1.2 Demo with On-screen Explanations https://www.youtube.com/watch?v=DcAxOVgHADY
+* **v1.1 Explanation Video**
+  https://www.youtube.com/watch?v=lpkKZuS4X-Y
+
+* **v1.1 Demo with On-screen Explanations**
+  https://www.youtube.com/watch?v=D1LzWphiurA
+
+* **v1.2 Demo with On-screen Explanations**
+  https://www.youtube.com/watch?v=DcAxOVgHADY
